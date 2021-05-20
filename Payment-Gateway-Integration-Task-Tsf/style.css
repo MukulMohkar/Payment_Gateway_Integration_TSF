@@ -1,0 +1,352 @@
+body {
+  background-image: url(./images/oxy3.jpg);
+  background-size: cover;
+}
+
+.mynavbar {
+  width: 95%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.mybrand {
+  width: 50%;
+}
+
+.Logo {
+  height: 50px;
+  width: 50px;
+}
+
+.mynav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-text{
+  font-size: 28px;
+  color: darkred !important;
+  font-style: italic;
+  padding: 5px 0;
+}
+
+.nav-text:hover{
+  text-decoration-line: underline;
+}
+
+.myrow{
+  margin-right: 0px !important;
+}
+
+/* .mylist {
+background-color: #ffe59b !important;
+border: none !important;
+padding: 10px 40px !important;
+} */
+
+.blink-hand {
+  font-size: 40px;
+  color: black;
+  opacity: 0;
+  margin: 9.5% -29% 0 0;
+  animation: blink 3.5s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  120% {
+    opacity: 0;
+  }
+}
+
+.mytext {
+  margin-top: 100px;
+  color: darkred;
+  font-weight: 800;
+}
+
+.mypass {
+  font-weight: 100;
+  font-size: 30px;
+  font-style: italic;
+  color: darkred;
+}
+
+.donateBtn {
+  display: block;
+  border-radius: 10%;
+  background-color: darkred;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+
+  margin: 15% -25% 0 0;
+}
+
+.donateBtnSpan {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+
+.donateBtnSpan:after {
+  content: "Now";
+  position: absolute;
+  color: white;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.6s;
+}
+.donateBtn:hover {
+  transform: scale(1.1);
+}
+
+.donateBtn:hover .donateBtnSpan {
+  padding-right: 30px;
+}
+
+.donateBtn:hover .donateBtnSpan:after {
+  opacity: 1;
+  right: 0;
+}
+
+.mybtn{
+  background:darkred !important;
+  font-weight: bolder;
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  color: white !important;
+}
+.mybtn:hover{
+  background-color:darkred;
+  padding: 5px 0;
+  font-weight: bolder;
+  color: black;
+  outline-style: outset;
+  outline-color: white;
+}
+
+.myfoot {
+  display: flex;
+  position: relative;
+  margin-top: 13%;
+  background-color: black;
+  color: white;
+  padding: 1%;
+}
+
+.footext {
+  justify-content: space-evenly;
+  display: flex;
+  width: 50%;
+}
+.foot-img{
+  height: 50px; 
+  background-color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.foot-img {
+  height: 50px;
+  width: 50px;
+}
+
+.social-img {
+  height: 30px;
+  width: 30px;
+}
+
+.foot-pass {
+  line-height: 2.5;
+}
+
+.vl {
+  border-left: 1px solid white;
+}
+
+/* about-page */
+.para-text {
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.mybtn {
+  float: none;
+  width: 200px;
+  border-radius: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 20px;
+  border: 3px solid #041952;
+  background-image: linear-gradient(30deg, #041952 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  cursor: pointer;
+  transition: background 300ms ease-in-out;
+}
+
+.back {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+.about-donate {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+/* about-page */
+
+/* ---------------------------------- Media Queries-------------------------------------  */
+
+/* -------------Desktops and laptops--------------------------- */
+
+@media (min-width: 1024px) {
+}
+
+/* ----------------Tablests and ipads--------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mybrand{
+    width: 40%;
+  }
+  .btn-nav{
+    font-size: 17px !important;
+    margin-top:8px !important;
+  }
+  .first-h1{
+    font-size: 27px;
+  }
+  .mypass{
+    font-size: 19px;
+  }
+  
+  .myfoot{
+    margin-top: 55%;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+/* -----------------Mobile phones---------------------------------------- */
+
+@media (max-width: 767px) {
+  .mybrand{
+    width: 40%;
+  }
+  .btn-nav{
+    font-size: 17px !important;
+    margin-top:8px !important;
+  }
+  .first-h1{
+    font-size: 39px;
+  }
+  .mybtn{
+    width: 62%;
+    margin-left: 50px;
+  }
+  .mypass{
+    font-size: 28px;
+  }
+  
+  .myfoot{
+    margin-top: 40%;
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .foot-img {
+    height: 30px;
+    width: 40px;
+}
+.social{
+  width: 32%;
+}
+.social-img{
+  height: 22px;
+  width: 22px;
+}
+}
+
+
+@media (max-width: 468px) {
+  .mybrand{
+    width: 40%;
+  }
+  .btn-nav{
+    font-size: 17px !important;
+    margin-top:8px !important;
+  }
+  .first-h1{
+    font-size: 22px;
+  }
+  .mybtn{
+    width: 62%;
+    margin-left: 50px;
+  }
+  .mypass{
+    font-size: 20px;
+  }
+  
+  .myfoot{
+    margin-top: 40%;
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .foot-pass{
+    line-height: 1.5;
+  }
+  .foot-img {
+    height: 25px;
+    width: 33px;
+}
+.social{
+  width: 42%;
+}
+.social-img{
+  height: 22px;
+  width: 22px;
+}
+.vl{
+  height: 28px;
+}
+}
